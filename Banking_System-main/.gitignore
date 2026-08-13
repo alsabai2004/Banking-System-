@@ -1,0 +1,4 @@
+*.o
+*.out
+banking_system
+build/
