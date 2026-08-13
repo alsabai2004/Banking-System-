@@ -1,0 +1,16 @@
+class Gold : public AccountType
+{
+public:
+    Gold() : AccountType(500000) {}
+
+    double getDailyWithdrawalLimit() const
+    {
+        return dailyWithdrawalLimit;
+    }
+
+    std::string getAccountTypeName() const
+    {
+        return "Gold";
+    }
+};
+

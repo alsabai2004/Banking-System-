@@ -1,0 +1,37 @@
+class Loan
+{
+protected:
+    long long amount;
+    int Comp_ID;
+    long long card_num;
+
+public:
+    Loan(long long amt, int id, long long num) : amount(amt), Comp_ID(id), card_num(num) {}
+
+    ~Loan() {}
+    long long getAmount() const
+    {
+        return amount;
+    }
+    int getCompID() const
+    {
+        return Comp_ID;
+    }
+    void setAmount(long long amt)
+    {
+        amount = amt;
+    }
+    void setCompID(int id)
+    {
+        Comp_ID = id;
+    }
+    long long getCardNum() const
+    {
+        return card_num;
+    }
+    void setCardNum(long long num)
+    {
+        card_num = num;
+    }
+};
+

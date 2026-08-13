@@ -1,0 +1,12 @@
+class AccountType
+{
+protected:
+    double dailyWithdrawalLimit;
+
+public:
+    AccountType(double limit) : dailyWithdrawalLimit(limit) {}
+    virtual ~AccountType() {}
+    virtual double getDailyWithdrawalLimit() const = 0;
+    virtual std::string getAccountTypeName() const = 0;
+};
+

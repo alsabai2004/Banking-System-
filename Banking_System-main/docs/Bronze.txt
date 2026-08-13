@@ -1,0 +1,16 @@
+class Bronze : public AccountType
+{
+public:
+    Bronze() : AccountType(100000) {}
+
+    double getDailyWithdrawalLimit() const
+    {
+        return dailyWithdrawalLimit;
+    }
+
+    std::string getAccountTypeName() const
+    {
+        return "Bronze";
+    }
+};
+

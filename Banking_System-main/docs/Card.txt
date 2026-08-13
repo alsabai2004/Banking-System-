@@ -1,0 +1,53 @@
+class Card
+{
+    long long cardNumber;
+    string cardPin;
+    double balance;
+
+public:
+    Card()
+    {
+        // Nothing to do here
+    }
+    Card(long long number, string pin)
+    {
+        cardNumber = number;
+        cardPin = pin;
+        balance = 0;
+    }
+    Card(long long number, string pin, double bal)
+    {
+        cardNumber = number;
+        cardPin = pin;
+        balance = bal;
+    }
+    long long getCardNumber() const
+    {
+        return cardNumber;
+    }
+    string getCardNumber_str() const
+    {
+        return to_string(cardNumber);
+    }
+    string getCardPin() const
+    {
+        return cardPin;
+    }
+    double getBalance() const
+    {
+        return balance;
+    }
+    void setCardNumber(int number)
+    {
+        cardNumber = number;
+    }
+    void setCardPin(int pin)
+    {
+        cardPin = pin;
+    }
+    void setBalance(double bal)
+    {
+        balance = bal;
+    }
+};
+

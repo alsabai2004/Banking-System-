@@ -1,0 +1,16 @@
+class Business : public AccountType
+{
+public:
+    Business() : AccountType(20000000) {}
+
+    double getDailyWithdrawalLimit() const
+    {
+        return dailyWithdrawalLimit;
+    }
+
+    std::string getAccountTypeName() const
+    {
+        return "Business";
+    }
+};
+
